@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Data (raw layer is local only; rebuildable)
+data/raw/
+*.parquet
+*.sqlite
+
+# Models / caches
+models/
+.cache/
+
+# OS / editors
+.DS_Store
+.idea/
+.vscode/
+
+# Claude Code local-only settings
+.claude/settings.local.json

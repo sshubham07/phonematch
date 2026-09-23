@@ -1,0 +1,45 @@
+# YouTube reviewers (docs/HLD.md §5). Verify each handle at youtube.com/@<handle>/videos before first run.
+channels:
+  - handle: Geekyranjit
+    name: Geekyranjit
+    tier: core
+    language: en
+  - handle: C4ETech
+    name: C4ETech
+    tier: core
+    language: en
+  - handle: beebomco
+    name: Beebom
+    tier: core
+    language: en
+  - handle: Gadgets360
+    name: Gadgets 360
+    tier: core
+    language: en
+  - handle: TrakinTech
+    name: Trakin Tech
+    tier: core
+    language: hi
+  - handle: TechnoRuhez
+    name: Techno Ruhez
+    tier: backup
+    language: hi
+  - handle: TechBar
+    name: TechBar
+    tier: backup
+    language: hi
+  - handle: TechBurner
+    name: Tech Burner
+    tier: backup
+    language: hi
+
+rules:
+  min_videos_per_phone: 3
+  max_videos_per_phone: 5
+  max_per_channel: 1
+  duration_min_s: 360
+  duration_max_s: 2100
+  prefer_days_after_launch: 14
+  reject_title_words: [unboxing, "first look", "first impressions", vs, "#shorts", launch, leaks]
+  variant_tokens: [pro, plus, max, ultra, lite, fe, neo, mini]
+  needs_review_below_score: 90
